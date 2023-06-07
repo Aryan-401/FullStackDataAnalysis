@@ -7,7 +7,7 @@ for i in range(1, 13):
     else:
         month = str(i)
 
-    df = pd.read_parquet(f'yellow_tripdata_2022-{month}.parquet')
+    df = pd.read_parquet(f'../yellow_tripdata_2022-{month}.parquet')
     df_ = pd.concat([df_, df])
     print(f'{df_.shape}, {i}/12')
 
