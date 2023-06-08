@@ -1,5 +1,6 @@
 import pandas as pd
-df_ = pd.DataFrame({})
+_df_ = pd.DataFrame()
+__df__ = pd.DataFrame()
 for i in range(1, 13):
 
     if i < 10:
@@ -8,10 +9,16 @@ for i in range(1, 13):
         month = str(i)
 
     df = pd.read_parquet(f'../yellow_tripdata_2022-{month}.parquet')
-    df_ = pd.concat([df_, df])
-    print(f'{df_.shape}, {i}/12')
+    ___df___ = df.sample(n=30000)
+    _df_ = pd.concat([_df_, df])
+    __df__ = pd.concat([__df__, ___df___])
+    print(f'{_df_.shape}, {i}/12')
 
-df_.to_csv('yellow_tripdata_2022.csv', index=False)
+print('Beginning to save...')
+__df__.to_csv('../yellow_tripdata_2022_sample.csv', index=False)
+print('Sample saved!')
+_df_.to_csv('../yellow_tripdata_2022.csv', index=False)
+print('All data saved!')
 
 
 
