@@ -1,5 +1,4 @@
 import geopandas as gpd
-import pandas as pd
 
 data = gpd.read_file('../NYC Taxi Zones.geojson')
 data['centroid'] = data['geometry'].centroid
