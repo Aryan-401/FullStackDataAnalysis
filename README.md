@@ -40,5 +40,15 @@ jupyter notebook DataModelling.ipynb
 
 ## Converting 3NF to flat file using SQL, run the script in [this directory](GCP/BigQuery/combine.sql)
 
-Looker Studio Dashboard
-[Looker](https://lookerstudio.google.com/reporting/bfb824f3-b375-491d-b79a-bc3a797bab0b?embed=true)
+[//]: # (List all the technologies used in this project)
+# Technologies Used
+- [Google Cloud Platform](https://cloud.google.com/)
+- [Google BigQuery](https://cloud.google.com/bigquery)
+- [Google Cloud Storage](https://cloud.google.com/storage)
+- [Mage-AI](https://mage-ai.com/)
+- [Looker Studio](https://lookerstudio.google.com/)
+- [Python](https://www.python.org/)
+- [Jupyter Notebook](https://jupyter.org/)
+- [SQL](https://www.mysql.com/)
+
+[Looker Studio Dashboard](https://lookerstudio.google.com/reporting/bfb824f3-b375-491d-b79a-bc3a797bab0b?embed=true)
